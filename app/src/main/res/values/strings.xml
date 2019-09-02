@@ -1,0 +1,71 @@
+<resources>
+    <string name="app_name">Controle Padaria</string>
+
+    <!-- A -->
+    <string name="action_about">Sobre</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_dialog_text">
+<![CDATA[
+<b>Aplicativo dos Carros 2015</b><br>
+Versao %s<br><br>
+<a href="http://www.livroandroid.com.br">http://livroandroid.com.br</a><br><br>
+<a href="http://www.facebook.com/ricardolecheta">http://facebook.com/ricardolecheta</a><br><br>
+<a href="https://plus.google.com/+RicardoLecheta">https://plus.google.com/+RicardoLecheta</a>
+	]]>
+	</string>
+    <string name="about_dialog_title">Livro Android</string>
+    <string name="Atualizar">Atualizar</string>
+
+    <!-- C -->
+    <string name="configuracoes">Configurações</string>
+
+
+    <!-- D -->
+    <string name="descricao">Descrição</string>
+    <string name="dashboard">Início</string>
+
+    <!-- E -->
+    <string name="emitir_ped_loja">Emitir Pedidos da Loja</string>
+    <string name="emitir_ped_padeiro">Emitir Pedidos para o padeiro</string>
+    <string name="editar">Editar</string>
+    <string name="excluir">Excluir</string>
+
+    <!-- L -->
+    <string name="lojas">Lojas</string>
+
+
+    <!-- M -->
+    <string name="mapa">Mapa</string>
+    <string name="msg_alerta_permissao">Para utilizar este aplicativo, você precisa aceitar as permissões.</string>
+    <string name="msg_error_conexao_indisponivel">Conexão indisponível. Verifique seu Wi-Fi ou 3G.</string>
+
+    <!-- N -->
+    <string name="nav_drawer_username">Ricardo Lecheta</string>
+    <string name="nav_drawer_email">rlecheta@gmail.com</string>
+    <string name="nome">Nome</string>
+
+    <!-- O -->
+    <string name="ok">OK</string>
+
+    <!--P-->
+    <string name="produtos">Produtos</string>
+    <string name="pedidos">Pedidos</string>
+
+    <!--R-->
+    <string name="relatorios">Relatórios</string>
+    <!-- S -->
+    <string name="share">Share</string>
+    <string name="sobre">Sobre</string>
+
+
+    <!-- V -->
+    <string name="vazio" />
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="product_name">Nome do produto</string>
+    <string name="product_qtd">qtd</string>
+    <string name="enter_name">nome</string>
+
+
+</resources>

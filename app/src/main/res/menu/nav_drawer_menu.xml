@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <!-- Dashboard -->
+        <item
+            android:id="@+id/nav_item_dashboard"
+            android:checked="true"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/dashboard" />
+        <!-- Lista com todos os Produtos -->
+        <item
+            android:id="@+id/nav_item_produtos"
+            android:checked="true"
+            android:icon="@drawable/ic_produtos"
+            android:title="@string/produtos" />
+        <!-- Lista com as lojas -->
+        <item
+            android:id="@+id/nav_item_lojas"
+            android:checked="true"
+            android:icon="@drawable/ic_loja"
+            android:title="@string/lojas" />
+        <!-- Lista com os Pedidos -->
+        <item
+            android:id="@+id/nav_item_pedidos"
+            android:checked="true"
+            android:icon="@drawable/ic_pedidos"
+            android:title="@string/pedidos" />
+        <!-- Emitir Pedidos -->
+        <item
+            android:id="@+id/nav_item_ped_loja"
+            android:checked="true"
+            android:icon="@drawable/ic_emitir"
+            android:title="@string/emitir_ped_loja" />
+        <!-- Emitir pedidos padeiro-->
+        <item
+            android:id="@+id/nav_item_ped_padeiro"
+            android:icon="@drawable/ic_recibo"
+            android:title="@string/emitir_ped_padeiro" />
+        <!-- Relatórios-->
+        <item
+            android:id="@+id/nav_item_relatorio"
+            android:icon="@drawable/ic_relatorio"
+            android:title="@string/relatorios" />
+        <!-- Tela de configurações -->
+        <item
+            android:id="@+id/nav_item_settings"
+            android:icon="@drawable/ic_drawer_settings"
+            android:title="@string/configuracoes" />
+    </group>
+</menu>
