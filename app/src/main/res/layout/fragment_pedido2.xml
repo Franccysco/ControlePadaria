@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgapps"  >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="6dp"
+            android:layout_weight="0.02">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/imgCalendar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/ic_date" />
+
+                <EditText
+                    android:id="@+id/edtDta"
+                    android:layout_toRightOf="@id/imgCalendar"
+                    android:layout_width="match_parent"
+                    android:hint="dia/mês/ano"
+                    android:focusable="false"
+                    android:inputType="date"
+                    android:editable="false"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/brown_border"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imgLoja"
+                    android:layout_below="@id/edtDta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_store_black" />
+
+                <TextView
+                    android:id="@+id/txtSelect"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edtDta"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/imgLoja"
+                    android:text="Selecione uma Loja" />
+
+
+                <Spinner
+                    android:id="@+id/lojaspinnerPedido"
+                    style="@style/spinerStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtSelect"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="10dp"
+                    android:tooltipText="Selecione a Loja"
+                    android:spinnerMode="dialog" />
+
+                <Button
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/btnadicionarPedido"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adicionar pedido"
+                    android:layout_below="@id/lojaspinnerPedido"
+                    android:textColor="@color/white"
+                    android:background="@color/accent"
+                    />
+
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="6dp"
+            android:layout_weight="0.02">
+
+            <Button
+                android:layout_marginTop="16dp"
+                android:id="@+id/historicoPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Histórico de pedidos"
+                android:layout_below="@id/lojaspinnerPedido"
+                android:textColor="@color/white"
+                android:background="@color/accent"
+                />
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="Lista de Pedidos"-->
+            <!--android:padding="10dp"-->
+            <!--android:background="@color/orange"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+            <!--android:gravity="center"/>-->
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

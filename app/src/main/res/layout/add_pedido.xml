@@ -5,35 +5,48 @@
     android:padding="12dp"
     android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/enter_name"
+
+    <TextView
+        android:text="Selecione o produto do pedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/itemProdutPedido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_name"
-        android:textColorHint="@color/gray"
-        android:textSize="12dp"
-        android:inputType="text"
-        android:background="@drawable/brown_border"
-        android:maxLines="1"
+        style="@style/spinerStyle"
         android:layout_marginRight="8dp"
         android:layout_marginEnd="8dp"
         android:textColor="@color/black"
         android:padding="12dp"/>
 
     <EditText
-        android:id="@+id/enter_valor"
+        android:id="@+id/qtdItemPedido"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/product_valor"
+        android:hint="@string/qtdPedido"
         android:textColorHint="@color/gray"
         android:layout_marginTop="24dp"
         android:textSize="12dp"
-        android:inputType="numberDecimal"
         android:background="@drawable/brown_border"
         android:maxLines="1"
+        android:inputType="number"
         android:layout_marginRight="8dp"
         android:layout_marginEnd="8dp"
         android:textColor="@color/black"
         android:padding="12dp"/>
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnadicionarItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:textColor="@color/white"
+        android:background="@color/accent"
+       />
+
+
 
 </LinearLayout>

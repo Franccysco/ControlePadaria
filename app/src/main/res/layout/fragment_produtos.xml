@@ -11,7 +11,8 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:paddingBottom="8sp"
-        android:scrollbars="none" />
+        android:scrollbars="none"
+        tools:listitem="@layout/adapter_produto" />
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"

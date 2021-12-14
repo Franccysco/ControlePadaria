@@ -51,4 +51,11 @@ public class Loja extends SugarRecord {
     public void settelefone(String telefone) {
         this.telefone = telefone;
     }
+
+
+
+    @Override
+    public String toString() {
+        return this.getNome();
+    }
 }

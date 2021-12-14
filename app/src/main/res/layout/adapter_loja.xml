@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icLoja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_store_black"
+               />
+
+
+
+            <TextView
+                android:id="@+id/nome_loja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/icLoja"
+                android:textStyle="bold"
+                tools:text="Nome Loja"
+                android:layout_marginLeft="8dp" />
+            
+            
+            <TextView
+                android:id="@+id/txtEndereco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endereço:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@id/nome_loja"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:id="@+id/endereco_loja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nome_loja"
+                android:layout_toRightOf="@id/txtEndereco"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                tools:text="Rua Maria do rosario"/>
+
+
+            <TextView
+                android:id="@+id/txtnumero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nº:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@id/nome_loja"
+                android:layout_toRightOf="@id/endereco_loja"
+                android:layout_marginTop="12dp"
+                />
+
+
+            <TextView
+                android:id="@+id/endereco_loja_numero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nome_loja"
+                android:layout_toRightOf="@id/txtnumero"
+                android:layout_margin="12dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                tools:text="1234"/>
+
+            <TextView
+                android:id="@+id/txtTelefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefone:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@id/txtEndereco"
+                android:layout_marginTop="12dp"
+                />
+
+            <TextView
+                android:id="@+id/endereco_loja_telefone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtEndereco"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/txtTelefone"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                tools:text="1234" />
+
+            <ImageButton
+                android:id="@+id/main_card_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/endereco_loja"
+                android:layout_toStartOf="@+id/main_card_delete"
+                android:background="?selectableItemBackground"
+                android:contentDescription="editar"
+                android:padding="8dp"
+                android:src="@drawable/ic_edit"
+                android:layout_toLeftOf="@+id/main_card_delete" />
+
+            <ImageButton
+                android:id="@id/main_card_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/endereco_loja"
+                android:background="?selectableItemBackground"
+                android:contentDescription="deletar"
+                android:padding="8dp"
+                android:src="@drawable/ic_delete"
+                android:layout_alignParentRight="true" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -14,6 +14,8 @@
     <color name="green">#0f0</color>
     <color name="yellow">#fff000</color>
     <color name="gray">#cccccc</color>
+    <color name="orange">#FF5722</color>
+
 
 
     <!-- SwipeRefreshLayout -->
@@ -22,6 +24,7 @@
     <color name="refresh_progress_2">#99CC00</color>
     <!-- verde -->
     <color name="refresh_progress_3">#CC0000</color>
+    <color name="deeppurple">#7c4dff</color>
     <!-- vermelho -->
 
 </resources>

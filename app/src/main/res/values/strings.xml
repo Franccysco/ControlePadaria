@@ -40,8 +40,8 @@ Versao %s<br><br>
     <string name="msg_error_conexao_indisponivel">Conexão indisponível. Verifique seu Wi-Fi ou 3G.</string>
 
     <!-- N -->
-    <string name="nav_drawer_username">Ricardo Lecheta</string>
-    <string name="nav_drawer_email">rlecheta@gmail.com</string>
+    <string name="nav_drawer_username">Usuário</string>
+    <string name="nav_drawer_email">usuario@email.com</string>
     <string name="nome">Nome</string>
 
     <!-- O -->
@@ -64,8 +64,14 @@ Versao %s<br><br>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="product_name">Nome do produto</string>
-    <string name="product_qtd">qtd</string>
-    <string name="enter_name">nome</string>
+    <string name="product_valor">Valor do produto</string>
+    <string name="enter_name">Nome do produto</string>
+    <string name="enter_name_loja">Nome da Loja</string>
+    <string name="loja_endereco">Rua da Loja</string>
+    <string name="loja_numero">Numero da Loja</string>
+    <string name="loja_tel">Telefone</string>
+    <string name="qtdPedido">Quantidade do item</string>
+    <string name="product_qtd">Quant.</string>
 
 
 </resources>

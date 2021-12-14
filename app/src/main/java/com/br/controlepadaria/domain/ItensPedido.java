@@ -43,6 +43,7 @@ public class ItensPedido extends SugarRecord {
         this.pedido = pedido;
     }
 
+
     public Produto getProduto() {
         return produto;
     }

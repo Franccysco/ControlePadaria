@@ -62,7 +62,6 @@ public class ProdutoAdapter  extends RecyclerView.Adapter<ProdutoAdapter.Produto
 
                 confirmDelete(p);
 
-
             }
         });
         
@@ -148,7 +147,7 @@ public class ProdutoAdapter  extends RecyclerView.Adapter<ProdutoAdapter.Produto
             }
         });
 
-        builder.setNegativeButton("NÂO", new DialogInterface.OnClickListener() {
+        builder.setNegativeButton("NÃO", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 Toast.makeText(context, "Tarefa Cancelada", Toast.LENGTH_LONG).show();

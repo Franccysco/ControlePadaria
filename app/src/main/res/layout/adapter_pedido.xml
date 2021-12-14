@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtPedido"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="PEDIDO: # 01"
+            android:padding="10dp"
+            android:background="@color/accent"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:gravity="center"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/imgCalendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_date"/>
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dta:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/imgCalendar"/>
+
+
+            <ImageView
+                android:id="@+id/imgLoja"
+                android:layout_toRightOf="@id/txtdate"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_store_black"/>
+            <TextView
+                android:id="@+id/txtNomeLoja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/imgLoja"
+                android:text="Padaria Palhano"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtValor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/txtNomeLoja"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Total Pedido: R$"/>
+            <TextView
+                android:id="@+id/txtTotalPedido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/txtValor"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_below="@id/txtNomeLoja"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="200,00"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_ver_mais"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ver Itens"/>
+
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -3,9 +3,9 @@ package com.br.controlepadaria.activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.br.controlepadaria.R;
-import com.br.controlepadaria.fragments.AboutDialog;
 import com.br.controlepadaria.fragments.DashBoardFragment;
 
 public class MainActivity extends BaseActivity {
@@ -54,7 +54,8 @@ public class MainActivity extends BaseActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.action_about){
-            AboutDialog.showAbout(getSupportFragmentManager());
+//            AboutDialog.showAbout(getSupportFragmentManager());
+            Toast.makeText(this,"Clicou em sobre", Toast.LENGTH_LONG).show();
             return true;
         }
 

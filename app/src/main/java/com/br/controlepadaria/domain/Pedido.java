@@ -2,9 +2,11 @@ package com.br.controlepadaria.domain;
 
 import com.orm.SugarRecord;
 
-public class Pedido extends SugarRecord {
+import java.io.Serializable;
 
-    private Long data;
+public class Pedido extends SugarRecord implements Serializable {
+
+    private String data;
     private Double valor;
     private Loja loja;
 
@@ -12,17 +14,17 @@ public class Pedido extends SugarRecord {
     public Pedido() {
     }
 
-    public Pedido(Long data, Double valor, Loja loja) {
+    public Pedido(String data, Double valor, Loja loja) {
         this.data = data;
         this.valor = valor;
         this.loja = loja;
     }
 
-    public Long getData() {
+    public String getData() {
         return data;
     }
 
-    public void setData(Long data) {
+    public void setData(String data) {
         this.data = data;
     }
 
@@ -40,5 +42,12 @@ public class Pedido extends SugarRecord {
 
     public void setLoja(Loja loja) {
         this.loja = loja;
+    }
+
+
+
+    @Override
+    public String toString() {
+        return this.getData();
     }
 }
